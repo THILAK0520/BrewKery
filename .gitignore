@@ -1,0 +1,12 @@
+.gradle/
+.kotlin/
+.idea/
+**/build/
+local.properties
+*.iml
+*.jks
+*.keystore
+captures/
+deliverables/*.apk
+# Exclude the accidental nested checkout from Android test sources.
+/app/src/androidTest/java/com/brewkery/BrewKery/
