@@ -4,6 +4,14 @@ A native coffee and bakery ordering app built with Kotlin, Jetpack Compose, MVI 
 
 Reference: https://vivekshah138.github.io/Brewkery/ (the repository's spelling is **Brewkery**, not `BrewKery`).
 
+## Assignment submission
+
+- Author: [Thilak Kumar](https://github.com/THILAK0520)
+- Source: [Public repository](https://github.com/THILAK0520/BrewKery)
+- [Download debug APK](https://github.com/THILAK0520/BrewKery/raw/refs/heads/main/deliverables/Brewkery-debug.apk) — Android 8.0 / API 26 or newer.
+- 20 unit tests passed; lint has zero errors; application and instrumentation APKs build. Device UI tests remain unverified. See [VALIDATION.md](VALIDATION.md).
+- Submit the APK as an attachment or Google Drive link with view access, alongside the repository URL, as requested in the assignment email. A recording is optional and is not included.
+
 ## Run and build
 
 - Install JDK 17 and Android SDK platform 36. Minimum supported Android version: 8.0 / API 26.
@@ -96,8 +104,12 @@ Actual instructions used in this conversation included:
 2. “make sure that all products are coming from the JSON mention in the Git Hub.” and “make sure that all the images you're creating or taking in the correct size.”
 3. “from the pervious plan and response start implement.”
 
+### Bug caught and fixed
+
+An IDE build failed at `mergeDebugResources` with `AccessDeniedException` on generated files inside OneDrive. A command-line workaround did not apply automatically to IDE builds. The Gradle script now reads an external build path from ignored `local.properties`, while permitting a command-line override. An explicit `Properties` import corrected a Gradle script namespace collision caught during verification. The previously failing task and subsequent full build/test checks passed.
+
 What went well: inspection distinguished the live six-product API from the four-product JavaScript demo, so the app loads products dynamically rather than copying the demo's embedded catalog.
 
 What needed correction: the first implementation included the entire extended Material icon library for just a few symbols. A stalled build's worker stacks showed D8 spending time transforming dependencies. The unnecessary library was replaced with core icons and small vector drawables for the bag and cup, reducing build and APK work. The initial site lookup also needed correction from `BrewKery` to the README's `Brewkery` URL.
 
-Source repository: https://github.com/THILAK0520/BrewKery. The debug APK is a local deliverable and is excluded from Git; build instructions above generate it from source. No submission email is sent. A screen recording is not included.
+Source repository: https://github.com/THILAK0520/BrewKery. The verified debug APK is included in `deliverables/` and linked above. Build instructions also generate it from source. No submission email is sent. A screen recording is not included.

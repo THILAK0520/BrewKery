@@ -1,4 +1,6 @@
-# Validation — 6 October 2026
+# Validation — 7 October 2026
+
+Repeated on 7 October from the relocated folder: all 90 Gradle tasks succeeded. IntelliJ inspection timed out; these are Gradle results, not device runtime results.
 
 ## Verified
 
@@ -19,6 +21,6 @@ The included live API integration test covers Menu → configured Item Detail �
 
 ## Delivery
 
-The source project is in this directory and is prepared for publication at https://github.com/THILAK0520/BrewKery. The installable assessment APK is the local, Git-excluded file `deliverables/Brewkery-debug.apk`; a fresh clone can generate it with the documented build command. Checkout is a local simulation; no payment/order backend is claimed. No email was sent.
+The source project is in this directory and is published at https://github.com/THILAK0520/BrewKery. The installable assessment APK is included at `deliverables/Brewkery-debug.apk`; a fresh clone can generate it with the documented build command. Checkout is a local simulation; no payment/order backend is claimed. No email was sent.
 
-APK SHA-256: `B10162640AACEC31B6F363CBEAA95F5A57B59D49938E53B4C4D8BCCF6841862A`.
+APK SHA-256: `922CA9531E25697432DB48D8060BAE30FFF9F1D4D68A43179A28AFDB10B1D116`.
